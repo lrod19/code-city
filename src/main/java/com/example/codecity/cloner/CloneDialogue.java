@@ -20,6 +20,7 @@ public class CloneDialogue {
             return;
         }
 
+
         try {
             cloneRepo(url);
         } catch (GitAPIException e) {
