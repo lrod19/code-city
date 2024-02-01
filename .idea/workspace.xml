@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a32a525-2317-4500-95bd-d4dec2f56672" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/jparser/ClassInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/jparser/JParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0a32a525-2317-4500-95bd-d4dec2f56672" name="Changes" comment="Added jparser package, first version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/ethan/Box Sync/Cal Poly/2023-2024/Winter Quarter/CSC 308/Assignment 1/CodeCity/FileParser/CodeCityJParser/code-city/src/main/java/com/example/codecity/jparser",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
@@ -64,6 +60,15 @@
       <option name="presentableId" value="Default" />
       <updated>1706656161457</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added jparser package, first version">
+      <option name="closed" value="true" />
+      <created>1706773510048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706773510049</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +81,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added jparser package, first version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jparser package, first version" />
   </component>
 </project>
