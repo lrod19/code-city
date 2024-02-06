@@ -2,6 +2,7 @@ package com.example.codecity.cloner;
 
 import com.example.codecity.JavaFXScene;
 import com.example.codecity.Main;
+import com.example.codecity.Window;
 import com.example.codecity.jparser.JParser;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
@@ -34,7 +35,7 @@ public class CloneDialogue {
      * If the repository requires authentication, the user will be prompted for an authentication token.
      * Errors during the cloning process, including authentication issues, are handled and displayed to the user.
      */
-    public static void cloneRepo(Stage stage) throws IOException {
+    public static void cloneRepo(Stage stage) throws Exception {
         String url = promptUserInput("Git URL", "Git Url Required", "Please enter a valid repository url.");
         if (url.isEmpty()) {
             return;
@@ -47,7 +48,7 @@ public class CloneDialogue {
             JParser dir = new JParser(path);
             dir.parseAll();
             Stage newStage = new Stage();
-            JavaFXScene.start(newStage, "codecity.fxml");
+            Window.start(newStage, dir);
         } catch (GitAPIException e) {
             handleCloneException(e, url);
         }

@@ -1,5 +1,6 @@
 package com.example.codecity.jparser;
 
+import com.example.codecity.Buildings;
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
@@ -22,6 +23,7 @@ public class JParser {
     private File projDir;
     private List<File> files;
     private List<ClassInfo> classes;
+    private Buildings buildings;
 
     /**
      * Constructs a JParser instance with the specified project directory.
@@ -32,12 +34,13 @@ public class JParser {
         this.projDir = projDir;
         files = new ArrayList<>();
         classes = new ArrayList<>();
+        buildings = new Buildings();
     }
 
     /**
      * Parses all files within the specified directory and extracts class information.
      */
-    public void parseAll() {
+    public void parseAll() throws Exception {
         explore(0, projDir.getPath(), projDir);
         for(File file : files){
             System.out.println(file);
@@ -56,6 +59,10 @@ public class JParser {
      */
     public List<ClassInfo> getClasses() {
         return classes;
+    }
+
+    public Buildings getBuildings(){
+        return buildings;
     }
 
     /**
@@ -107,6 +114,13 @@ public class JParser {
         VoidVisitor<List<String>> fieldNameCollector = new FieldNameCollector();
         fieldNameCollector.visit(cu, fields);
         fields.forEach(n -> System.out.println("Found field '" + n + "' in " + toParse.getName()));
+
+        System.out.println(name.length());
+        if(LOC > 100){
+            buildings.makeLargeBuilding(100, 100, name.length() * name.length(), name.length() * name.length());
+        } else{
+            buildings.makeSmallBuilding(50, 50, name.length() * name.length(), name.length() * name.length());
+        }
 
         return new ClassInfo(name, LOC, methods, fields);
     }

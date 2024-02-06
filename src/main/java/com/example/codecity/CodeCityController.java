@@ -10,7 +10,7 @@ import java.io.IOException;
 public class CodeCityController {
     @FXML private javafx.scene.control.Button repoButton;
     @FXML
-    protected void onRepoButtonClicked() throws IOException {
+    protected void onRepoButtonClicked() throws Exception {
         Stage stage = (Stage) repoButton.getScene().getWindow();
         CloneDialogue.cloneRepo(stage);
     }
