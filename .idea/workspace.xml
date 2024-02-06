@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a32a525-2317-4500-95bd-d4dec2f56672" name="Changes" comment="Added jparser package, first version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/CodeCityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/JavaFXScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/codecity/codecity.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/codecity/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/codecity/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/CodeCityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/CodeCityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/cloner/CloneDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/cloner/CloneDialogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/jparser/JParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/jparser/JParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -50,13 +58,26 @@
     "last_opened_file_path": "C:/Users/ethan/Box Sync/Cal Poly/2023-2024/Winter Quarter/CSC 308/Assignment 1/CodeCity/FileParser/CodeCityJParser/code-city/src/main/java/com/example/codecity/jparser",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ethan\Box Sync\Cal Poly\2023-2024\Winter Quarter\CSC 308\Assignment 1\CodeCity\FileParser\CodeCityJParser\code-city\src\main\java\com\example\codecity\jparser" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.codecity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.codecity.Main" />
+      <module name="codecity" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

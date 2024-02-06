@@ -29,7 +29,7 @@ public class JParser {
     public void parseAll(){
         explore(0, projDir.getPath(), projDir);
         for(File file : files){
-            //System.out.println(file);
+            System.out.println(file);
             try{
                 classes.add(parseClass(file));
             }catch (FileNotFoundException ex){
