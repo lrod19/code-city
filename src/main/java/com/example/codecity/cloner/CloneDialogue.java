@@ -24,12 +24,34 @@ public class CloneDialogue {
      */
     private static final String DEFAULT_CLONE_DIRECTORY = "./code";
 
+
+    public static void deleteCodeDirectory() {
+        File directory = new File(DEFAULT_CLONE_DIRECTORY);
+        deleteDirectoryContents(directory);
+        // Optionally delete the directory itself if you want
+        // directory.delete();
+    }
+
+    private static void deleteDirectoryContents(File directory) {
+        File[] files = directory.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (file.isDirectory()) {
+                    deleteDirectoryContents(file);
+                }
+                file.delete();
+            }
+        }
+    }
+
     /**
      * Prompts the user for a Git repository URL and initiates the cloning process.
      * If the repository requires authentication, the user will be prompted for an authentication token.
      * Errors during the cloning process, including authentication issues, are handled and displayed to the user.
      */
+
     public static void cloneRepo() {
+        deleteCodeDirectory();
         String url = promptUserInput("Git URL", "Git Url Required", "Please enter a valid repository url.");
         if (url.isEmpty()) {
             return;
