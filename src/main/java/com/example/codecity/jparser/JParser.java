@@ -14,37 +14,58 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * JParser is a class for parsing Java source code files and extracting information about classes, methods, and fields.
+ */
 public class JParser {
+
     private File projDir;
     private List<File> files;
     private List<ClassInfo> classes;
 
-    public JParser(File projDir){
+    /**
+     * Constructs a JParser instance with the specified project directory.
+     *
+     * @param projDir The project directory containing Java source code files.
+     */
+    public JParser(File projDir) {
         this.projDir = projDir;
         files = new ArrayList<>();
         classes = new ArrayList<>();
     }
 
-    //Parses all files within the specified directory
-    public void parseAll(){
+    /**
+     * Parses all files within the specified directory and extracts class information.
+     */
+    public void parseAll() {
         explore(0, projDir.getPath(), projDir);
         for(File file : files){
             System.out.println(file);
             try{
                 classes.add(parseClass(file));
-            }catch (FileNotFoundException ex){
-                System.out.print("Error processing file " + file.getName() + ". File not found.\n\tFile Path: '" + file.getPath()+"'");
+            } catch (FileNotFoundException ex) {
+                System.out.print("Error processing file " + file.getName() + ". File not found.\n\tFile Path: '" + file.getPath() + "'");
             }
         }
     }
 
-    public List<ClassInfo> getClasses(){
+    /**
+     * Returns the list of ClassInfo objects representing parsed classes.
+     *
+     * @return The list of ClassInfo objects.
+     */
+    public List<ClassInfo> getClasses() {
         return classes;
     }
 
-    public int getTotalLOC(){
+    /**
+     * Calculates and returns the total lines of code (LOC) for all parsed classes.
+     *
+     * @return The total lines of code.
+     */
+    public int getTotalLOC() {
         int total = 0;
-        for(ClassInfo cur : classes){
+        for (ClassInfo cur : classes) {
             total += cur.getLOC();
         }
         return total;
@@ -112,9 +133,7 @@ public class JParser {
             super.visit(cls, collector);
             collector.add(cls.getNameAsString());
         }
-
     }
-
 
 }
 

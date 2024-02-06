@@ -29,6 +29,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ethanhandelman"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5c2b21cc-97ab-42bf-ad63-57558c4bb5a2" />
+        <option name="url" value="https://github.com/ethanhandelman/code-city.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -61,7 +75,7 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ethan\Box Sync\Cal Poly\2023-2024\Winter Quarter\CSC 308\Assignment 1\CodeCity\FileParser\CodeCityJParser\code-city\src\main\java\com\example\codecity\jparser" />
@@ -104,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706773593846</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added jparser package, first version">
+      <option name="closed" value="true" />
+      <created>1706821491912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706821491912</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added jparser package, first version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jparser package, first version" />
+    <MESSAGE value="Inserted javadoc comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inserted javadoc comments" />
   </component>
 </project>
