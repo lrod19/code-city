@@ -117,9 +117,9 @@ public class JParser {
 
         System.out.println(name.length());
         if(LOC > 100){
-            buildings.makeLargeBuilding(100, 100, name.length() * name.length(), name.length() * name.length());
+            buildings.makeLargeBuilding(50, 100, name.length() * name.length(), 0);
         } else{
-            buildings.makeSmallBuilding(50, 50, name.length() * name.length(), name.length() * name.length());
+            buildings.makeSmallBuilding(25, 50, name.length() * name.length(), 50);
         }
 
         return new ClassInfo(name, LOC, methods, fields);
