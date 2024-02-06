@@ -39,8 +39,9 @@ public class JParser {
      */
     public void parseAll() {
         explore(0, projDir.getPath(), projDir);
-        for (File file : files) {
-            try {
+        for(File file : files){
+            System.out.println(file);
+            try{
                 classes.add(parseClass(file));
             } catch (FileNotFoundException ex) {
                 System.out.print("Error processing file " + file.getName() + ". File not found.\n\tFile Path: '" + file.getPath() + "'");
