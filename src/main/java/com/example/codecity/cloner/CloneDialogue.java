@@ -32,7 +32,7 @@ public class CloneDialogue {
         File directory = new File(DEFAULT_CLONE_DIRECTORY);
         deleteDirectoryContents(directory);
         // Optionally delete the directory itself if you want
-        directory.deleteOnExit();
+        directory.delete();
     }
 
     private static void deleteDirectoryContents(File directory) {
@@ -61,7 +61,7 @@ public class CloneDialogue {
         try {
             cloneRepo(url);
             stage.close();
-            File path = new File("code");
+            File path = new File(DEFAULT_CLONE_DIRECTORY);
             JParser dir = new JParser(path);
             dir.parseAll();
             Stage newStage = new Stage();
@@ -69,7 +69,6 @@ public class CloneDialogue {
         } catch (GitAPIException e) {
             handleCloneException(e, url);
         }
-        deleteCodeDirectory();
     }
 
     /**
