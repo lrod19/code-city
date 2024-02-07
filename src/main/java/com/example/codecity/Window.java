@@ -1,5 +1,6 @@
 package com.example.codecity;
 
+import com.example.codecity.cloner.CloneDialogue;
 import com.example.codecity.jparser.ClassInfo;
 import com.example.codecity.jparser.JParser;
 import javafx.application.Application;
@@ -59,7 +60,7 @@ public abstract class Window extends Application {
         drawBuildings(canvas.getGraphicsContext2D(), dir);
 
         //Creating a scene object
-        Scene scene = new Scene(root, 1200, 1000);
+        Scene scene = new Scene(root, 1200, 800);
 
         //Setting title to the Stage
         stage.setTitle("Draw Buildings - Miro");
@@ -87,7 +88,6 @@ public abstract class Window extends Application {
             //}
         //}
         int n = dir.getClasses().size();
-        int[] numClassesOnRow = new int[n];
         ArrayList<Color> colors = new ArrayList<>();
 
         // Fill out data for buildings
@@ -123,15 +123,9 @@ public abstract class Window extends Application {
         // Draw them!
         int i = 0;
         for (Rectangle rect : dir.getBuildings().getBuilding()) {
-            /* int adjustedY = b.getY() - b.getHeight();
-            int adjustedHeight = b.getHeight(); */
             gc.setFill(colors.get(i));
             gc.fillRect(rect.getX(), rect.getY(), rect.getWidth(), rect.getHeight());
             i++;
         }
-    }
-
-    public static void main(String[] args) {
-        launch();
     }
 }

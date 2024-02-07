@@ -115,7 +115,6 @@ public class JParser {
         fieldNameCollector.visit(cu, fields);
         fields.forEach(n -> System.out.println("Found field '" + n + "' in " + toParse.getName()));
 
-        System.out.println(name.length());
         if(LOC > 100){
             buildings.makeLargeBuilding(50, 100, name.length() * name.length(), 0);
         } else{

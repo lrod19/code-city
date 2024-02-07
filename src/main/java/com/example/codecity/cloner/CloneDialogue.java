@@ -60,12 +60,10 @@ public class CloneDialogue {
 
         try {
             cloneRepo(url);
-            stage.close();
             File path = new File(DEFAULT_CLONE_DIRECTORY);
             JParser dir = new JParser(path);
             dir.parseAll();
-            Stage newStage = new Stage();
-            Window.start(newStage, dir);
+            Window.start(stage, dir);
         } catch (GitAPIException e) {
             handleCloneException(e, url);
         }

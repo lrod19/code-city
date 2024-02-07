@@ -13,5 +13,6 @@ public class CodeCityController {
     protected void onRepoButtonClicked() throws Exception {
         Stage stage = (Stage) repoButton.getScene().getWindow();
         CloneDialogue.cloneRepo(stage);
+        CloneDialogue.deleteCodeDirectory();
     }
 }
