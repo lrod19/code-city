@@ -32,7 +32,6 @@ public abstract class Window extends Application {
 
     final int BUILDING_WIDTH = 100;
     ArrayList<Buildings> buildings = new ArrayList<>();
-    ArrayList<BuildingFrontEnd> buildingFrontEnds = new ArrayList<>();
     ArrayList<String> superClasses = new ArrayList<>();
     static Canvas canvas;
     static Pane root;
@@ -119,9 +118,6 @@ public abstract class Window extends Application {
                 c = Color.RED;
             }
             colors.add(c);
-            /* int height = nm*20;
-            buildingFrontEnds.add(new BuildingFrontEnd(colPos, rowPos, c, height));
-            numClassesOnRow[superClassIndex]++; */
         }
 
         // Draw them!

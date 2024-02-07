@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="21ee52a8-4fa2-428c-a32a-dd6094276690" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/CodeCityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/CodeCityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/BuildingFrontEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/JavaFXScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/cloner/CloneDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/cloner/CloneDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codecity/jparser/JParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codecity/jparser/JParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">

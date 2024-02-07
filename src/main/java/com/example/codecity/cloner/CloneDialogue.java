@@ -1,7 +1,5 @@
 package com.example.codecity.cloner;
 
-import com.example.codecity.JavaFXScene;
-import com.example.codecity.Main;
 import com.example.codecity.Window;
 import com.example.codecity.jparser.JParser;
 import javafx.scene.control.Alert;
@@ -13,7 +11,6 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Optional;
 
 /**
@@ -35,7 +32,7 @@ public class CloneDialogue {
         File directory = new File(DEFAULT_CLONE_DIRECTORY);
         deleteDirectoryContents(directory);
         // Optionally delete the directory itself if you want
-        // directory.delete();
+        directory.deleteOnExit();
     }
 
     private static void deleteDirectoryContents(File directory) {
@@ -72,6 +69,7 @@ public class CloneDialogue {
         } catch (GitAPIException e) {
             handleCloneException(e, url);
         }
+        deleteCodeDirectory();
     }
 
     /**
